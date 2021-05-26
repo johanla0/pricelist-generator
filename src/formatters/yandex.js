@@ -8,6 +8,7 @@ export default (array) => {
   const picture = '';
   const popular = '';
   const inStock = 'Да';
+  // eslint-disable-next-line func-names
   const records = _.sortBy(array, [function (o) { return o.category; }]).map((elem) => [
     elem.category,
     elem.name,

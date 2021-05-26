@@ -6,6 +6,7 @@ import stringify from 'csv-stringify/lib/sync.js';
 
 export default (array) => {
   const records = _.sortBy(array, [
+    // eslint-disable-next-line func-names
     function (o) {
       return o.category;
     },
