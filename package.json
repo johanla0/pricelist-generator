@@ -1,0 +1,33 @@
+{
+  "name": "pricelist-maker",
+  "version": "1.0.0",
+  "description": "makes pricelists for modulkassa and yandex",
+  "bin": "bin/genpricelist.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx -n --experimental-vm-modules jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "transform": {}
+  },
+  "author": "johanla0",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^27.0.1",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.1",
+    "jest-cli": "^27.0.1"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "csv": "^5.5.0",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.30"
+  }
+}
