@@ -1,12 +1,9 @@
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
-
 branch:
 	git checkout $(ARGS) > /dev/null 2>&1 || git checkout -b $(ARGS)
 history:
 	git log
 install:
-	install-deps
-install-deps:
 	npm ci
 genpricelist:
 	node bin/genpricelist.js

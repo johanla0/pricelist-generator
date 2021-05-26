@@ -2,11 +2,13 @@
   "name": "pricelist-maker",
   "version": "1.0.0",
   "description": "makes pricelists for modulkassa and yandex",
-  "bin": "bin/genpricelist.js",
-  "main": "index.js",
   "type": "module",
+  "bin": {
+    "genpricelist": "bin/genpricelist.js"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "npx -n --experimental-vm-modules jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "jest": {
     "verbose": true,
@@ -26,7 +28,8 @@
   },
   "dependencies": {
     "commander": "^7.2.0",
-    "csv": "^5.5.0",
+    "csv-parse": "^4.15.4",
+    "csv-stringify": "^5.6.2",
     "lodash": "^4.17.21",
     "mime-types": "^2.1.30"
   }

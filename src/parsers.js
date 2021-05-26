@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import parse from 'csv/lib/sync.js';
+import parse from 'csv-parse/lib/sync.js';
 
 const types = {
   'text/csv': parse,
