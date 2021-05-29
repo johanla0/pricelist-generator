@@ -9,5 +9,9 @@ export default (data, type) => {
   if (!_.has(types, type)) {
     throw new Error(`File ${type} is not supported`);
   }
-  return types[type](data);
+  return types[type](data, {
+    delimiter: ';',
+    trim: true,
+    skip_empty_lines: true,
+  });
 };
